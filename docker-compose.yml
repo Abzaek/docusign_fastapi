@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  docusign-app:
+    build: .
+    
+    # maps ports: HOST:CONTAINER
+    ports:
+      - "8011:8000"
+      
+    volumes:
+      - .:/app
+
+    restart: unless-stopped
+   
