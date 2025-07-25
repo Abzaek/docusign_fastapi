@@ -7,9 +7,6 @@ services:
     # maps ports: HOST:CONTAINER
     ports:
       - "8011:8000"
-      
-    volumes:
-      - .:/app
 
-    restart: unless-stopped
+    restart: always
    
